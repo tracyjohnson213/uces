@@ -1,0 +1,11 @@
+footer .content-row {
+    float: left;
+    width: 50%;
+    padding-right: 8%;
+}
+
+footer img {
+    padding-top: 1%;
+    padding-left: 30%;
+    padding-right: 20%;
+}

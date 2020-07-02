@@ -11,6 +11,10 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}"
     />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
     <title>UCES Protection Plan</title>
   </head>
   <body>
@@ -63,6 +67,39 @@
 
     {% block content %} {% endblock %}
 
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <div class="content-row">
+          <h5><span id="lblFooterTitle">Agent Info</span></h5>
+          <div class="address">
+            <p><span id="lblAgentName">Tracy Johnson</span></p>
+            <p><span id="lblAgentPhone">Phone: (562) 548-0622</span></p>
+            <p>
+              <span id="lblAgentEmail">tjohnson224.credit@gmail.com</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content-row">
+        <img
+          src="{{ url_for('static', filename='assets/images/UCES_PP_Logo.png') }}"
+          alt="UCES_PP_Logo"
+        />
+        <a href="https://play.google.com/store/apps/details?id=com.fex.uces"
+          ><img
+            src="https://secure.financialeduservices.com/Image/whatIsFES_GoogleStore.png"
+            alt=""
+        /></a>
+        <a href="https://apps.apple.com/us/app/uces-pp/id1483644801"
+          ><img
+            src="https://secure.financialeduservices.com/Image/whatIsFES_AppStore.png"
+            alt=""
+        /></a>
+      </div>
+        <p class="small">
+          Copyright © 2020 All Rights Reserved
+        </p>
+    </footer>
     <!--Bootstrap core JavaScript-->
     <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
