@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/business-casual.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+    <title>UCES Protection Plan</title>
+  </head>
+  <body>
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      Protection and Security For Your Future
+    </h1>
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark py-lg-4">
+      <div class="container">
+        <div id="navbarResponsive" class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="{{ url_for('index') }}">Home</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="{{ url_for('services') }}">What's Included</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="{{ url_for('contact') }}">Contact</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="{{ url_for('login') }}">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    {% block content %} {% endblock %}
+  </body>
+</html>
