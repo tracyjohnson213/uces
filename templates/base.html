@@ -9,28 +9,52 @@
     />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+      href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}"
+    />
     <title>UCES Protection Plan</title>
   </head>
   <body>
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-      Protection and Security For Your Future
+      <img
+        class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
+        src="{{ url_for('static', filename='assets/images/UCES_PP_Logo.png') }}"
+        alt="UCES_PP_Logo"
+      />
+      <span class="site-heading-lower"
+        >Protection and Security For Your Future</span
+      >
     </h1>
     <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark py-lg-4">
       <div class="container">
         <div id="navbarResponsive" class="collapse navbar-collapse">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{ url_for('index') }}">Home</a>
+              <a
+                class="nav-link text-uppercase text-expanded"
+                href="{{ url_for('index') }}"
+                >Home</a
+              >
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{ url_for('services') }}">What's Included</a>
+              <a
+                class="nav-link text-uppercase text-expanded"
+                href="{{ url_for('services') }}"
+                >What's Included</a
+              >
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{ url_for('contact') }}">Contact</a>
+              <a
+                class="nav-link text-uppercase text-expanded"
+                href="{{ url_for('contact') }}"
+                >Contact</a
+              >
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{ url_for('login') }}">Login</a>
+              <a
+                class="nav-link text-uppercase text-expanded"
+                href="{{ url_for('login') }}"
+                >Login</a
+              >
             </li>
           </ul>
         </div>
@@ -38,5 +62,9 @@
     </nav>
 
     {% block content %} {% endblock %}
+
+    <!--Bootstrap core JavaScript-->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
   </body>
 </html>
