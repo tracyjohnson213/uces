@@ -1,3 +1,18 @@
+.site-heading-title {
+    float: left;
+    width: 50%;
+    padding-right: 8%;
+}
+.site-heading-agent-info {
+    float: right;
+    width: 50%;
+    padding-right: 8%;
+}
+
+#mainNav {
+  clear: both;			
+}
+
 footer .content-row {
     float: left;
     width: 50%;
@@ -8,4 +23,8 @@ footer img {
     padding-top: 1%;
     padding-left: 30%;
     padding-right: 20%;
+}
+
+footer .agent-info {
+    text-align: left;
 }
