@@ -1,0 +1,94 @@
+[
+
+    {
+        "name": "Budgeting",
+        "subtitle": "Get Your Spending on Track",
+        "description": "We take pride in our work, and it shows. Every time you order a beverage from us, we guarantee that it will be an experience worth having. Whether it's our world famous Venezuelan Cappuccino, a refreshing iced herbal tea, or something as simple as a cup of speciality sourced black coffee, you will be coming back for more.",
+        "service_icon": "static/assets/images/budgeting.png",
+        "image_source": "static/assets/images/budgeting_image.jpg"
+    },
+    {
+        "name": "Credit Restoration",
+        "subtitle": "Take Back Control of Your Credit",
+        "description": "Our credit education services can assist you in challenging the credit bureaus to remove inaccurate, obsolete and erroneous items from your credit report. Restore your score and maximize your financial opportunities!",
+        "service_icon": "static/assets/images/credit_restoration.png",
+        "image_source": "static/assets/images/credit_score_image.jpg"
+    },
+    {
+        "name": "Credit Builder",
+        "subtitle": "Build Your Credit Knowledge",
+        "description": "Access your credit report in an easy-to-understand, online format and utilize our extensive financial library and resource center to assist in increasing your financial potential.",
+        "service_icon": "static/assets/images/credit_builder.png",
+        "image_source": "static/assets/images/creditbuilder_image.jpg"
+    },
+    {
+        "name": "Credit Attorney",
+        "subtitle": "We're Dedicated to Working for You",
+        "description": "Our attorneys will evaluate your case for difficult to remove, inaccurate items on your credit report. If legitimate, they will sue the agency to clean up your report, in which case you may be entitled to compensation.",
+        "service_icon": "static/assets/images/credit_attorney.png",
+        "image_source": "static/assets/images/attorney_image.jpg"
+    },
+    {
+        "name": "Credit Monitoring",
+        "subtitle": "Stay Updated on Your Credit Progress",
+        "description": "Your interactive credit report, money manager and financial account alert system. All of your online accounts in one, organized place with transaction and credit monitoring alerts sent straight to your phone!",
+        "service_icon": "static/assets/images/credit_monitoring.png",
+        "image_source": "static/assets/images/credit_monitoring_image.png"
+    },
+    {
+        "name": "Debt Payoff",
+        "subtitle": "Make a Plan to Live Debt Free",
+        "description": "Create a financial plan that will give you the exact payment guide to eliminate your debt quicker than you expected and save you from unnecessary interest payments.",
+        "service_icon": "static/assets/images/debt_payoff.png",
+        "image_source": "static/assets/images/debt_calcuator_image.jpg"
+    },
+    {
+        "name": "Identity Monitoring",
+        "subtitle": "Ensure Your Info is Secure",
+        "description": "InfoArmor leads the identity protection industry with PrivacyArmor®,  a proactive monitoring service that alerts you at the first sign of fraud and fully restores your identity.",
+        "service_icon": "static/assets/images/identity_monitoring.png",
+        "image_source": "static/assets/images/identity_theft_prevention_image.jpg"
+    },
+    {
+        "name": "Life Insurance",
+        "subtitle": "Ensure Your Family is Protected",
+        "description": "Create a sound financial strategy for your loved ones in the case of the unexpected. UCES Agents are entitled to a $30,000 term life policy; with incremental increases the longer you maintain your membership.",
+        "service_icon": "static/assets/images/life_insurance.png",
+        "image_source": "static/assets/images/life_insurance_image.jpg"
+    },
+    {
+        "name": "Financial Lockbox",
+        "subtitle": "Create a Financial Roadmap",
+        "description": "Roadmap your financial contacts and information in one central, online location that can be accessed at anytime. This organizational tool can be personalized to forward to a contact of your choice in case of emergency.",
+        "service_icon": "static/assets/images/financial_lockbox.png",
+        "image_source": "static/assets/images/document_lock_image.jpg"
+    },
+    {
+        "name": "NetWorth",
+        "subtitle": "Discover Your Net Worth",
+        "description": "Discover your Net Worth by figuring out your assets and liabilities, and using our quick and simple calculations to see where you stand! Your Net Worth Report will help you continue to build your Net Worth by tracking your progress as often as you'd like!",
+        "service_icon": "static/assets/images/net_worth.png",
+        "image_source": "static/assets/images/networth_image.jpg"
+    },
+    {
+        "name": "Savings Goals",
+        "subtitle": "Make Saving Quick and Easy",
+        "description": "Achieve your goals by setting goals! Create multiple goals within the Savings Goals system and input how often you can personally put money aside. The system will calculate what you need to save based on how often you can...",
+        "service_icon": "static/assets/images/savings_goals.png",
+        "image_source": "static/assets/images/savings_image.jpg"
+    },
+    {
+        "name": "Will & Trust",
+        "subtitle": "Peace of Mind for Life's Uncertainties",
+        "description": "Protect your loved ones by preparing the same Will & Trust documents you would in an attorney’s office, but from the comfort of your own home. Maintain your membership and changes can be made at anytime, cost-free.",
+        "service_icon": "static/assets/images/will_trust.png",
+        "image_source": "static/assets/images/will_trust_image.jpg"
+    },
+    {
+        "name": "YFL Family Mint",
+        "subtitle": "Teach Your Kids Proven Financial Habits",
+        "description": "Implemented in schools across America, you can now bring the FamilyMint online educational portal into your home to enhance financial knowledge among the children in your life.",
+        "service_icon": "static/assets/images/yfl_family_mint.png",
+        "image_source": "static/assets/images/yflfoundation_image.jpg"
+    }
+]

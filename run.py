@@ -1,4 +1,5 @@
 import os
+import json
 from flask import Flask, render_template  # Flask class
 
 app = Flask(__name__)  # instance of Flask
@@ -11,17 +12,21 @@ def index():  # defined view
 
 @app.route('/services')
 def services():
-    return render_template('services.html')
+    data = []
+    with open("data/services.json", "r") as json_data:
+        data = json.load(json_data)
+    return render_template(
+        'services.html', page_title='Services', services=data)
 
 
 @app.route('/contact')
 def contact():
-    return render_template('contact.html')
+    return render_template('contact.html', page_title='Contact')
 
 
 @app.route('/login')
 def login():
-    return render_template('login.html')
+    return render_template('login.html', page_title='Login')
 
 
 if __name__ == '__main__':  # default module of python
@@ -30,3 +35,5 @@ if __name__ == '__main__':  # default module of python
             debug=True)
 
 # https://startbootstrap.com/previews/business-casual/
+# https://www.ucesprotectionplan.com/default.aspx?rid=tjohnson224
+# google images
