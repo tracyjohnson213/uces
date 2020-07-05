@@ -49,6 +49,15 @@ def login():
     return render_template('login.html', page_title='Login')
 
 
+# route and view for enrollment page
+@app.route('/enroll', methods=["GET", "POST"])
+def enroll():
+    if request.method == "POST":
+        flash("Thanks {}, we have received your message!".
+              format(request.form["name"]))
+    return render_template('enroll.html', page_title='Enrollment')
+
+
 # default module of python
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
