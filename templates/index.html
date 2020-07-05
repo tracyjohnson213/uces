@@ -22,7 +22,9 @@
         </p>
         <p></p>
         <div class="intro-button mx-auto">
-          <a class="btn btn-primary btn-xl" href="{{ url_for('enroll') }}">Enroll Now!</a>
+          <a class="btn btn-primary btn-xl" href="{{ url_for('enroll') }}"
+            >Enroll Now!</a
+          >
         </div>
       </div>
     </div>
@@ -41,11 +43,27 @@
             can help to ensure you and your family are safeguarding the assets
             that you've earned and those you have to come.
           </p>
-          <a class="btn btn-primary btn-xl" href="{{ url_for('services') }}">What's Included</a>
+          <a class="btn btn-primary btn-xl" href="{{ url_for('services') }}"
+            >What's Included</a
+          >
+        </div>
+      </div>
     </div>
   </div>
-    </div>
-  </div>
+</section>
+
+<section class="alert alert-warning" style="width: 300px; position: fixed; bottom: 10px; left: 10px; z-index: 25;">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+  <h5 style="margin-bottom: 10px important!;">COVID-19 - We Are All in This Together</h5>
+  <p>
+    In observance with guidelines recommended by the CDC as well as our state
+    and federal governments, the Corporate Office is having staff work from home
+    to minimize the spread of the coronavirus. Although we will not be handling
+    the call volume we normally do, we will have key staff members from each
+    department who will be answering calls and emails. We encourage you to
+    utilize email to contact us with your questions: Customer Support:
+    <a href="mailto:support">support@ucespp.net</a>
+  </p>
 </section>
 
 {% endblock %}
