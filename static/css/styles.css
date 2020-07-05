@@ -1,3 +1,4 @@
+/* home page */
 .site-heading-title {
     float: left;
     width: 50%;
@@ -13,18 +14,36 @@
   clear: both;			
 }
 
+/* services */
 .services-heading {
     text-align: center;
     margin-top: 0;
 }
 
+/* individual service */
 .product-item-img {
-    max-width: 45%;
+    max-width: 45% !important;
     max-height: 30%;
     min-width: 45%;
     min-height: 30%;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* footer */
 footer .content-row {
     float: left;
     width: 50%;

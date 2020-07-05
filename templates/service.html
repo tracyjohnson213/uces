@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+{% extends 'base.html' %} {% block content %}
+
+<div class="card" id="service" style="width: 75%; margin: auto; padding: 1%;">
+  <div class="card-header">
+    {% if service.name == "Credit Restoration" %}
+    <h1>{{ service.name }}</h1>
+    <p>{{ service.subname }}</p>
+    {% else %}
+    <h1>{{ service.name }}</h1>
+    {% endif %}
+  </div>
+
+  <p class="mb-0">{{ service.description2 }}</p>
+  {% if service.name != "Identity Monitoring" %}
+  <img
+    class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
+    src="../static/assets/images/{{ service.image_source2 }}"
+    alt="Image for {{ service.name }}"
+  />
+  {% endif %}
+
+  <h2>{{ service.table_title }}</h2>
+
+  <!--if Credit Builder-->
+  {% if service.name == "Credit Builder" %}
+  <table>
+    <tr>
+      <td>
+        <strong>{{ service.feature1_heading }}</strong> {{ service.feature1_text
+        }}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>{{ service.feature2_heading }}</strong> {{ service.feature2_text
+        }}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>{{ service.feature3_heading }}</strong> {{ service.feature3_text
+        }}
+      </td>
+    </tr>
+  </table>
+
+  <!--elif starts Identity Monitoring-->
+  {% elif service.name == "Identity Monitoring" %}
+  <table>
+    <p><strong>{{ service.table_heading}}</strong></p>
+    <tr>
+      <td>{{ service.feature1 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature2 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature3 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature4 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature5 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature6 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature7 }}</td>
+    </tr>
+  </table>
+  <p>{{ service.smallprint }}</p>
+
+  <!--elif Budgeting, Credit Restoration, Debt Payoff, Financial Lockbox, Net Worth, Savings Goal-->
+  {% elif service.name == "Budgeting" or service.name == "Credit Restoration" or
+  service.name == "Debt Payoff" or service.name == "Financial Lockbox" or
+  service.name == "Net Worth" or service.name == "Savings Goals" %}
+  <table>
+    <p><strong>{{ service.table_heading}}</strong></p>
+    <tr>
+      <td>{{ service.feature1 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature2 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature3 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature4 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature5 }}</td>
+    </tr>
+  </table>
+
+  <!--elif Budgeting, Credit Restoration, Debt Payoff, Financial Lockbox, Net Worth, Savings Goal-->
+  {% elif service.name == "Budgeting" or service.name == "Credit
+  Restoration(www.united-credit.org)" or service.name == "Debt Payoff" or
+  service.name == "Financial Lockbox" or service.name == "Net Worth" or
+  service.name == "Savings Goals" %}
+  <table>
+    <p><strong>{{ service.table_heading}}</strong></p>
+    <tr>
+      <td>{{ service.feature1 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature2 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature3 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature4 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature5 }}</td>
+    </tr>
+  </table>
+
+  <!--elif starts Will & Trust-->
+  {% elif service.name == "Will & Trust" %}
+  <table>
+    <p><strong>{{ service.table_heading}}</strong></p>
+    <tr>
+      <td>{{ service.feature1 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature2 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature3 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature4 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature5 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature6 }}</td>
+    </tr>
+    <tr>
+      <td>{{ service.feature7 }}</td>
+    </tr>
+  </table>
+
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab1" role="tablist">
+      <a
+        href="#tabContent1_tab1"
+        class="nav-item nav-link active"
+        id="nav-tab1_1"
+        data-toggle="tab"
+        aria-controls="tab1"
+        aria-selected="true"
+        >{{ service.nav_tab1 }}</a
+      >
+      <a
+        href="#tabContent1_tab2"
+        class="nav-item nav-link"
+        id="nav-tab1_2"
+        data-toggle="tab"
+        aria-controls="tab2"
+        aria-selected="false"
+        >{{ service.nav_tab2 }}</a
+      >
+      <a
+        href="#tabContent1_tab3"
+        class="nav-item nav-link"
+        id="nav-tab1_3"
+        data-toggle="tab"
+        aria-controls="tab3"
+        aria-selected="false"
+        >{{ service.nav_tab3 }}</a
+      >
+    </div>
+  </nav>
+  <div class="tab-content" id="tabContent1">
+    <div
+      class="tab-pane fade show active"
+      aria-labelledby="tabContent1_tab1"
+      id="tabContent1_tab1"
+      role="tabpanel"
+    >
+      {{ service.tab1_feature_text }}
+    </div>
+    <div
+      class="tab-pane fade"
+      aria-labelledby="tabContent1_tab2"
+      id="tabContent1_tab2"
+      role="tabpanel"
+    >
+      {{ service.tab2_feature_text }}
+    </div>
+    <div
+      class="tab-pane fade"
+      aria-labelledby="tabContent1_tab3"
+      id="tabContent1_tab3"
+      role="tabpanel"
+    >
+      {{ service.tab3_feature_text }}
+    </div>
+  </div>
+
+  <!--else starts Credit Attorney-->
+  {% elif service.name == "Credit Attorney" %}
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab2" role="tablist">
+      <a
+        href="#tabContent2_tab1"
+        class="nav-item nav-link active"
+        id="nav-tab2_tab1"
+        data-toggle="tab"
+        aria-controls="tab1"
+        aria-selected="true"
+        >{{ service.nav_tab1 }}</a
+      >
+      <a
+        href="#tabContent2_tab2"
+        class="nav-item nav-link"
+        id="nav-tab2_tab2"
+        data-toggle="tab"
+        aria-controls="tab2"
+        aria-selected="false"
+        >{{ service.nav_tab2 }}</a
+      >
+    </div>
+  </nav>
+  <div class="tab-content" id="tabContent2">
+    <div
+      class="tab-pane fade show active"
+      aria-labelledby="tabContent2_tab1"
+      id="tabContent2_tab1"
+      role="tabpanel"
+    >
+      <p>{{ service.tab1_paragraph1 }}</p>
+      {% for item in service.tab1_paragraph1_list %}
+      <ul>
+        <li>{{ item }}</li>
+      </ul>
+      {% endfor %}
+      <p>{{ service.tab1_paragraph2 }}</p>
+    </div>
+    <div
+      class="tab-pane fade"
+      aria-labelledby="tabContent2_tab2"
+      id="tabContent2_tab2"
+      role="tabpanel"
+    >
+      <p>{{ service.tab2_paragraph1 }}</p>
+      <p><strong>{{ service.tab2_subtitle }}</strong></p>
+      {% for item in service.tab2_paragraph2_list %}
+      <p>{{ item }}</p>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!--else Credit Monitoring-->
+  {% elif service.name == "Credit Monitoring" %}
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab3" role="tablist">
+      <a
+        href="#tabContent3_tab1"
+        class="nav-item nav-link active"
+        id="nav_tab1"
+        data-toggle="tab"
+        aria-controls="nav-tab3_tab1"
+        aria-selected="true"
+        >{{ service.nav_tab1 }}</a
+      >
+      <a
+        href="#tabContent3_tab2"
+        class="nav-item nav-link"
+        id="nav_tab2"
+        data-toggle="tab"
+        aria-controls="nav-tab3_tab2"
+        aria-selected="false"
+        >{{ service.nav_tab2 }}</a
+      >
+      <a
+        href="#tabContent3_tab3"
+        class="nav-item nav-link"
+        id="nav_tab3"
+        data-toggle="tab"
+        aria-controls="nav-tab3_tab3"
+        aria-selected="false"
+        >{{ service.nav_tab3 }}</a
+      >
+    </div>
+  </nav>
+  <div class="tab-content" id="tabContent3">
+    <div
+      class="tab-pane fade show active"
+      aria-labelledby="tabContent3_tab1"
+      id="tabContent3_tab1"
+      role="tabpanel"
+    >
+      <p>
+        <strong>{{ service.tab1_feature1_heading }}</strong> {{
+        service.tab1_feature1_text }}
+      </p>
+      <p>
+        <strong>{{ service.tab1_feature2_heading }}</strong> {{
+        service.tab1_feature2_text }}
+      </p>
+      <p>
+        <strong>{{ service.tab1_feature3_heading }}</strong> {{
+        service.tab1_feature3_text }}
+      </p>
+    </div>
+    <div
+      class="tab-pane fade"
+      aria-labelledby="tabContent3_tab2"
+      id="tabContent3_tab2"
+      role="tabpanel"
+    >
+      <p>
+        <strong>{{ service.tab2_feature1_heading }}</strong> {{
+        service.tab2_feature1_text }}
+      </p>
+      <p>
+        <strong>{{ service.tab2_feature2_heading }}</strong> {{
+        service.tab2_feature2_text }}
+      </p>
+      <p>
+        <strong>{{ service.tab2_feature3_heading }}</strong> {{
+        service.tab2_feature3_text }}
+      </p>
+    </div>
+    <div
+      class="tab-pane fade"
+      aria-labelledby="tabContent3_tab3"
+      id="tabContent3_tab3"
+      role="tabpanel"
+    >
+      <p>
+        <strong>{{ service.tab3_feature1_heading }}</strong> {{
+        service.tab3_feature1_text }}
+      </p>
+      <p>
+        <strong>{{ service.tab3_feature2_heading }}</strong> {{
+        service.tab3_feature2_text }}
+      </p>
+      <p>
+        <strong>{{ service.tab3_feature3_heading }}</strong> {{
+        service.tab3_feature3_text }}
+      </p>
+    </div>
+  </div>
+
+  <!--elif Life Insurance, YFL Family Mint-->
+  {% elif service.name == "Life Insurance" or service.name == "YFL Family Mint"
+  %}
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab4" role="tablist">
+      <a
+        href="#tabContent4_tab1"
+        class="nav-item nav-link active"
+        id="nav-tab4_tab1"
+        data-toggle="tab"
+        aria-controls="tab1"
+        aria-selected="true"
+        >{{ service.nav_tab1 }}</a
+      >
+      <a
+        href="#tabContent4_tab2"
+        class="nav-item nav-link"
+        id="nav-tab4_tab2"
+        data-toggle="tab"
+        aria-controls="tab2"
+        aria-selected="false"
+        >{{ service.nav_tab2 }}</a
+      >
+      <a
+        href="#tabContent4_tab3"
+        class="nav-item nav-link"
+        id="nav-tab4_tab3"
+        data-toggle="tab"
+        aria-controls="tab3"
+        aria-selected="false"
+        >{{ service.nav_tab3 }}</a
+      >
+    </div>
+  </nav>
+  <div class="tab-content" id="tabContent4">
+    <div
+      class="tab-pane fade show active"
+      aria-labelledby="tabContent4_tab1"
+      id="tabContent4_tab1"
+      role="tabpanel"
+    >
+      {{ service.tab1_feature_text }}
+    </div>
+    <div
+      class="tab-pane fade"
+      aria-labelledby="tabContent4_tab2"
+      id="tabContent4_tab2"
+      role="tabpanel"
+    >
+      {{ service.tab2_feature_text }}
+    </div>
+    <div
+      class="tab-pane fade"
+      aria-labelledby="tabContent4_tab3"
+      id="tabContent4_tab3"
+      role="tabpanel"
+    >
+      {{ service.tab3_feature_text }}
+    </div>
+  </div>
+
+  {% endif %}
+</div>
+
+{% endblock %}
