@@ -3,7 +3,7 @@ import json
 from flask import Flask, render_template, request, flash
 
 app = Flask(__name__)  # instance of Flask
-app.secret_key = "some_secret"
+app.secret_key = os.getenv('SECRET', 'some_secret')
 
 
 # route and view for home page
@@ -60,9 +60,9 @@ def enroll():
 
 # default module of python
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
-            port=int(os.environ.get('PORT')),
-            debug=True)
+    app.run(host=os.getenv('IP', '0.0.0.0'),
+            port=int(os.getenv('PORT', '5000')),
+            debug=False)
 
 # https://startbootstrap.com/previews/business-casual/
 # https://www.ucesprotectionplan.com/default.aspx?rid=tjohnson224
